@@ -4,10 +4,25 @@
  */
 package com.mycompany.pvprmi;
 
+import java.io.Serializable;
+
 /**
  *
  * @author pedro
  */
-public class Pvp {
+public class Pvp implements Serializable {
     
+    public Pvp() {}
+    public Pvp(int jogador) {
+        this.jogador = jogador;
+    }
+    
+    public int jogador;
+    
+    public int vida = 100;
+    
+    public void atacar() {
+        this.vida = this.vida - 10;
+        System.out.println("Ataque realizado, -10 vida.\nVida atual: " + this.vida);
+    }
 }

@@ -10,4 +10,8 @@ package com.mycompany.pvprmi;
  */
 public class Client {
     
+    Scanner scan = new Scanner();
+    
+    PvpInterface client = new PvpInterface();
+    PvpInterface server = (PvpInterface) registry.lookup("PVP");
 }
