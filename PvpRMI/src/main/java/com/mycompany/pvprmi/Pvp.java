@@ -20,9 +20,4 @@ public class Pvp implements Serializable {
     public int jogador;
     
     public int vida = 100;
-    
-    public void atacar() {
-        this.vida = this.vida - 10;
-        System.out.println("Ataque realizado, -10 vida.\nVida atual: " + this.vida);
-    }
 }

@@ -4,14 +4,20 @@
  */
 package com.mycompany.pvprmi;
 
+import static java.lang.System.in;
+import java.util.Scanner;
+
 /**
  *
  * @author pedro
  */
 public class Client {
-    
-    Scanner scan = new Scanner();
-    
-    PvpInterface client = new PvpInterface();
-    PvpInterface server = (PvpInterface) registry.lookup("PVP");
+
+    public static void main(String args[]) {
+
+        Scanner scan = new Scanner(in);
+
+        PvpInterface client = new PvpInterface();
+        PvpInterface server = (PvpInterface) registry.lookup("PVP");
+    }
 }
